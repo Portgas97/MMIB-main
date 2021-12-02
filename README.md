@@ -18,4 +18,5 @@ This will pull the main repository and also it's submodules.
 And you can make it easier with aliases:
 
 ***git config --global alias.clone-all 'clone --recurse-submodules'***
+
 ***git config --global alias.pull-all 'pull --recurse-submodules'***

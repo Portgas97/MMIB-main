@@ -2,7 +2,7 @@
 Microservices-based My Message in a Bottle application
 
 ## Add a submodule
-If you <code>want</code> to add a microservice (hence a submodule), you have to run the command:
+If you <mark>want</mark> to add a microservice (hence a submodule), you have to run the command:
 
 ***git submodule add -b \<branchName\> \<repoURL\>***
 

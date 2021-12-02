@@ -7,15 +7,15 @@ So you've made changes in the submodule's repository and committed them in its r
 ## Keeping your submodules up-to-date
 If someone updated a submodule, the other team-members should update the code of their submodules. This is not automatically done by git pull, because with git pull it only retrieves the information that the submodule is pointing to another commit, but doesn't update the submodule's code. To update the code of your submodules, you should run:
 
-git submodule update
+***git submodule update***
 
 To make it easier:
 
-git pull --recurse-submodules
+***git pull --recurse-submodules***
 
 This will pull the main repository and also it's submodules.
 
 And you can make it easier with aliases:
 
-git config --global alias.clone-all 'clone --recurse-submodules'
-git config --global alias.pull-all 'pull --recurse-submodules'
+***git config --global alias.clone-all 'clone --recurse-submodules'***
+***git config --global alias.pull-all 'pull --recurse-submodules'***

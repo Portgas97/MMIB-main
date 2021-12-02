@@ -1,0 +1,6 @@
+[submodule "MMIB-ApiGateway-Submodule"]
+	path = MMIB-ApiGateway-Submodule
+	url = https://github.com/Portgas97/MMIB-ApiGateway-Submodule.git
+[submodule "Users-Service"]
+	path = Users-Service
+	url = https://github.com/ivansarno/Users-Service.git

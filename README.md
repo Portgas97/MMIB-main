@@ -1,6 +1,11 @@
 # MMIB-main
 Microservices-based My Message in a Bottle application
 
+## Add a submodule
+If you <code>want</code> to add a microservice (hence a submodule), you have to run the command:
+
+***git submodule add -b \<branchName\> \<repoURL\>***
+
 ## Pushing updates
 So you've made changes in the submodule's repository and committed them in its repository. If you now do a git status in the main repository, you'll see that the submodule is in the list Changes not staged for commit and it has the text (modified content) behind it. This means that the code of the submodule is checked out on a different commit than the main repository is pointing to. To make the main repository point to this new commit, you just add this change with git add and then commit and push it.
 

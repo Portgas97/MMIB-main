@@ -4,3 +4,6 @@
 [submodule "Users-Service"]
 	path = Users-Service
 	url = https://github.com/ivansarno/Users-Service.git
+[submodule "notifications-service"]
+	path = notifications-service
+	url = https://github.com/gargiulofrancesco/notifications-service.git

@@ -7,3 +7,4 @@
 [submodule "notifications-service"]
 	path = notifications-service
 	url = https://github.com/gargiulofrancesco/notifications-service.git
+	branch = main

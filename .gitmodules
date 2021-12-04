@@ -1,9 +1,11 @@
 [submodule "MMIB-ApiGateway-Submodule"]
 	path = MMIB-ApiGateway-Submodule
 	url = https://github.com/Portgas97/MMIB-ApiGateway-Submodule.git
+	branch = master
 [submodule "Users-Service"]
 	path = Users-Service
 	url = https://github.com/ivansarno/Users-Service.git
+	branch = master
 [submodule "notifications-service"]
 	path = notifications-service
 	url = https://github.com/gargiulofrancesco/notifications-service.git

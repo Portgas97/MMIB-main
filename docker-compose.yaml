@@ -99,8 +99,27 @@ services:
       context: ./notifications-service
       dockerfile: DockerfileWeb
     restart: on-failure
+    volumes:
+      - ./notifications-service:/code
 
-
+  redis:
+    image: "redis:alpine"
+    container_name: rd01
+    expose:
+      - "6379"
+    restart: on-failure
+  
+  celery:
+    depends_on:
+      - redis
+    build: 
+      context: ./notifications-service
+      dockerfile: DockerfileCelery
+    links:
+      -  redis
+    volumes:
+      - ./notifications-service:/code/
+    restart: on-failure
 
   #
   # Specify here your microservices

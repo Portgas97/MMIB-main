@@ -3,8 +3,11 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/MMIB-ApiGateway-Submodule" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MMIB-Message-Submodule" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Users-Service" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/notifications-service" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.9" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.9 (MMIB-main)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">

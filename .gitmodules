@@ -10,3 +10,6 @@
 	path = notifications-service
 	url = https://github.com/gargiulofrancesco/notifications-service.git
 	branch = main
+[submodule "MMIB-Message-Submodule"]
+	path = MMIB-Message-Submodule
+	url = https://github.com/giuseppe-crea/MMIB-Message-Submodule.git

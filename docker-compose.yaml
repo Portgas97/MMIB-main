@@ -62,6 +62,7 @@ services:
     environment:
       - USERS_MS_HOST=users_ms_worker
       - NOTIFICATIONS_MS_HOST=notifications_ms_worker
+      - MESSAGES_MS_HOST=messages_ms_worker
     labels:
       - mib.api_gateway_worker
 
@@ -74,6 +75,40 @@ services:
   # microservices
   #
 
+  # -------------------------------------------- #
+  # Message Services                              #
+  # -------------------------------------------- #
+
+  messages_ms_worker:
+    #
+    # Users Microservice Worker node
+    #
+    build:
+      context: ./MMIB-Message-Submodule
+      dockerfile: Dockerfile
+    restart: on-failure
+    volumes:
+      - ./MMIB-Message-Submodule:/code
+
+  redis_messages:
+    image: "redis:alpine"
+    container_name: rd02
+    command: --port 6378
+    expose:
+      - "6378"
+    restart: on-failure
+
+  celery_messages:
+    depends_on:
+      - redis_messages
+    build:
+      context: ./MMIB-Message-Submodule
+      dockerfile: DockerfileCelery
+    links:
+      -  redis_messages
+    volumes:
+      - ./MMIB-Message-Submodule:/code
+    restart: on-failure
 
   # -------------------------------------------- #
   # Users Microservice                           #

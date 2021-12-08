@@ -156,6 +156,17 @@ services:
       - ./notifications-service:/code/
     restart: on-failure
 
+  beat:
+    build:
+      context: ./notifications-service
+      dockerfile: DockerfileBeat
+    volumes:
+      - ./notifications-service:/code
+    depends_on:
+      - celery
+    links:
+      - celery
+
   #
   # Specify here your microservices
   # separating services by: db_service, migration_service, worker_service

@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MMIB-ApiGateway-Submodule" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MMIB-Message-Submodule" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Users-Service" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/notifications-service" vcs="Git" />
   </component>
